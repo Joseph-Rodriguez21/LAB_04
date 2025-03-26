@@ -82,6 +82,9 @@ con esta parte del codigo, el código genera una gráfica comparativa de la señ
 4. Resultados 
 
 ![image](https://github.com/user-attachments/assets/63e838b7-7f4c-476a-ac74-c246ce3147a3)
+ dando como resultado la gráfica que muestra la señal EMG original en función del tiempo, con el voltaje en el eje vertical y el tiempo en el eje horizontal.
+
+
 ![image](https://github.com/user-attachments/assets/847db2f6-bd58-4817-93a7-44b0c914566a)
 
 
