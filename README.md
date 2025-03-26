@@ -77,6 +77,6 @@ Por último, una vez verificado vamos a realizar su correspondiente grafica, se 
 hecho esto obtenemos la siguiente gráfica sobre la que vamos a trabajar y realizar los correspondientes filtros.
 
 ![image](https://github.com/user-attachments/assets/e4754c9d-2218-4875-b4a3-f5231d816c02)
-
+-
 
    
