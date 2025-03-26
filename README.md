@@ -69,6 +69,8 @@ También se realiza una verificación de datos para comprobar que se esta realiz
 
 ![image](https://github.com/user-attachments/assets/e5767a96-e3b2-4480-ba51-6cc3a48852e1)
 
+luego extrae dos columnas de valores de (tiempo) y (voltaje) Para luego convertirlos en valores numéricos en donde se verifica si hay datos y de ser así imprime los primeros 10 pares (tiempo, voltaje)para confirmar que la lectura si fue realizada permitiendo asi que se verifique que la señal EMG haya sido cargada correctamente antes de procesarla
+
 ![image](https://github.com/user-attachments/assets/136445e0-dc47-45bb-a002-e0e3b11f5a80)
 
 ![image](https://github.com/user-attachments/assets/62876c8f-9cc5-4c13-b350-bb9387378d50)
