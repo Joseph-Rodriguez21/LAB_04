@@ -77,6 +77,8 @@ luego se añaden dos funciones para aplicar filtros pasa altos y pasa bajos a la
 
 ![image](https://github.com/user-attachments/assets/62876c8f-9cc5-4c13-b350-bb9387378d50)
 
+con esta parte del codigo, el código genera una gráfica comparativa de la señal EMG antes y después del filtrado en donde se representa la señal original en azul con transparencia y la señal filtrada en rojo para resaltar los efectos del procesamiento añadiendo las etiquetas en los ejes
+
 ![image](https://github.com/user-attachments/assets/63e838b7-7f4c-476a-ac74-c246ce3147a3)
 ![image](https://github.com/user-attachments/assets/847db2f6-bd58-4817-93a7-44b0c914566a)
 
