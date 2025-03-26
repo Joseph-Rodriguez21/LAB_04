@@ -69,14 +69,13 @@ También se realiza una verificación de datos para comprobar que se esta realiz
 
 ![image](https://github.com/user-attachments/assets/e5767a96-e3b2-4480-ba51-6cc3a48852e1)
 
-Por último, una vez verificado vamos a realizar su correspondiente grafica, se añaden titulos de ejes y cuadrilla para mejor analisis e identificación.
+![image](https://github.com/user-attachments/assets/136445e0-dc47-45bb-a002-e0e3b11f5a80)
 
-![image](https://github.com/user-attachments/assets/65ac99ed-8a0f-49cb-b04b-8b94c0454b18)
+![image](https://github.com/user-attachments/assets/62876c8f-9cc5-4c13-b350-bb9387378d50)
+
+![image](https://github.com/user-attachments/assets/63e838b7-7f4c-476a-ac74-c246ce3147a3)
+![image](https://github.com/user-attachments/assets/847db2f6-bd58-4817-93a7-44b0c914566a)
 
 
-hecho esto obtenemos la siguiente gráfica sobre la que vamos a trabajar y realizar los correspondientes filtros.
-
-![image](https://github.com/user-attachments/assets/e4754c9d-2218-4875-b4a3-f5231d816c02)
--
 
    
