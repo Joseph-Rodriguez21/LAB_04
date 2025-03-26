@@ -88,7 +88,7 @@ dando como resultado la gráfica que muestra la señal EMG original en función 
 
 ![image](https://github.com/user-attachments/assets/847db2f6-bd58-4817-93a7-44b0c914566a)
 
-para luego comparar la señal EMG antes y después del filtrado la cual contiene lo que es la señal original (azul) que muestra alta variabilidad y ruido, mientras que la señal filtrada (roja) resalta mejor la actividad muscular eliminando frecuencias no deseadas permitiendo asi un mejor analisis de la señal generada por la actividad de contaccion y relajacion del musculo 
+para luego comparar la señal EMG antes y después del filtrado la cual contiene lo que es la señal original (azul) que muestra alta variabilidad y ruido, mientras que la señal filtrada (roja) resalta mejor la actividad muscular eliminando frecuencias no deseadas permitiendo asi un mejor analisis de la señal generada por la actividad de contraccion y relajacion del musculo 
 
 
 
