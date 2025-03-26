@@ -73,6 +73,8 @@ luego extrae dos columnas de valores de (tiempo) y (voltaje) Para luego converti
 
 ![image](https://github.com/user-attachments/assets/136445e0-dc47-45bb-a002-e0e3b11f5a80)
 
+luego se añaden dos funciones para aplicar filtros pasa altos y pasa bajos a la señal EMG utilizando un filtro Butterworth donde primero se calcula la frecuencia de muestreo y luego se aplica un filtro pasa altos con un corte de 10 Hz para eliminar el ruido de baja frecuencia y después un filtro pasa bajos con un corte de 50 Hz para reducir el ruido de alta frecuencia, obteniendo una señal más limpia.
+
 ![image](https://github.com/user-attachments/assets/62876c8f-9cc5-4c13-b350-bb9387378d50)
 
 ![image](https://github.com/user-attachments/assets/63e838b7-7f4c-476a-ac74-c246ce3147a3)
