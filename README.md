@@ -86,7 +86,7 @@ con esta parte del codigo, el código genera una gráfica comparativa de la señ
 dando como resultado la gráfica que muestra la señal EMG original en función del tiempo, con el voltaje en el eje vertical y el tiempo en el eje horizontal.
 
 
-![image](https://github.com/user-attachments/assets/847db2f6-bd58-4817-93a7-44b0c914566a)
+![image](https://github.com/user-attachments/assets/e6c0a753-0fcf-4ffb-b542-ee7eea61dcd2)
 
 para luego comparar la señal EMG antes y después del filtrado la cual contiene lo que es la señal original (azul) que muestra alta variabilidad y ruido, mientras que la señal filtrada (roja) resalta mejor la actividad muscular eliminando frecuencias no deseadas permitiendo asi un mejor analisis de la señal generada por la actividad de contraccion y relajacion del musculo 
 
