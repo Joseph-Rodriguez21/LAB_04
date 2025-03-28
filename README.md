@@ -107,6 +107,9 @@ para luego comparar la señal EMG antes y después del filtrado la cual contiene
 
 ![image](https://github.com/user-attachments/assets/1e0436ff-df1a-4887-818d-fb28bc8fdcd0)
 
+![image](https://github.com/user-attachments/assets/545110a5-c74b-4a29-8f84-5dd8fb301765)
+
+
 ![image](https://github.com/user-attachments/assets/45336d62-055a-4947-9733-6be0521f5dee)
 
 ![image](https://github.com/user-attachments/assets/6e199025-be57-4bdb-833a-c0f134e9a350)
