@@ -1,7 +1,9 @@
 import csv 
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.signal import butter, filtfilt
+from scipy.signal import butter, filtfilt, windows
+from scipy.fftpack import fft, fftfreq
+from scipy.stats import ttest_ind
 
 # Leer el archivo CSV
 filename = "senal_emg_.csv"
@@ -43,14 +45,14 @@ if timestamps:
         b, a = butter(order, normal_cutoff, btype='low', analog=False)
         return filtfilt(b, a, data)
 
-    # frecuencia de muestreo 
+    # Frecuencia de muestreo 
     fs = 1 / np.mean(np.diff(timestamps))
 
-    # filtro pasa altas
+    # Filtro pasa altas
     high_cutoff = 10
     filtered_high = highpass_filter(data, high_cutoff, fs)
 
-    # filtro pasa bajas
+    # Filtro pasa bajas
     low_cutoff = 50 
     filtered_low = lowpass_filter(filtered_high, low_cutoff, fs)
 
@@ -63,6 +65,29 @@ if timestamps:
     plt.title("Señal EMG Antes y Después del Filtrado")
     plt.legend()
     plt.grid()
+    plt.show()
+
+    # Segmentación en ventanas
+    tamaño_ventana = 500
+    superposicion_ventanas = 250
+    pasos = tamaño_ventana - superposicion_ventanas
+    aplicar_ventanas = []
+    espectros = []
+    frecuencias = np.fft.rfftfreq(tamaño_ventana, d=1/fs)
+    frecuencias_medias = []
+
+    plt.figure(figsize=(12, 6))
+    plt.title("Señal Segmentada en Ventanas de Tiempo")
+    plt.xlabel("Muestras")
+    plt.ylabel("Amplitud")
+
+    for i in range(0, len(filtered_low) - tamaño_ventana, pasos):
+        ventana_señal = filtered_low[i:i+tamaño_ventana] * windows.hamming(tamaño_ventana)
+        aplicar_ventanas.append(ventana_señal)
+
+        # Graficar cada ventana en el dominio del tiempo
+        plt.plot(range(i, i + tamaño_ventana), ventana_señal, alpha=0.5)
+
     plt.show()
 
 else:
