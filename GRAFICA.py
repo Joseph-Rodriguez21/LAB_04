@@ -6,7 +6,7 @@ from scipy.fftpack import fft, fftfreq
 from scipy.stats import ttest_ind
 
 # Leer el archivo CSV
-filename = "senal_emg_.csv"
+filename = "senal_2.csv"
 timestamps = []
 data = []
 
@@ -87,8 +87,27 @@ if timestamps:
 
         # Graficar cada ventana en el dominio del tiempo
         plt.plot(range(i, i + tamaño_ventana), ventana_señal, alpha=0.5)
-
+    
     plt.show()
-
+    
+    # Análisis espectral de cada ventana
+    plt.figure(figsize=(12, 6))
+    plt.title("Espectrograma de la Señal EMG")
+    plt.xlabel("Ventanas de Tiempo")
+    plt.ylabel("Frecuencia (Hz)")
+    
+    espectrograma = []
+    
+    for ventana in aplicar_ventanas:
+        espectro = np.abs(fft(ventana)[:len(frecuencias)])
+        espectros.append(espectro)
+        espectrograma.append(espectro)
+    
+    espectrograma = np.array(espectrograma).T  # Transponer para visualizar correctamente
+    plt.imshow(espectrograma, aspect='auto', cmap='jet', origin='lower',
+               extent=[0, len(aplicar_ventanas), frecuencias[0], frecuencias[-1]])
+    plt.colorbar(label="Amplitud del Espectro")
+    plt.show()
+    
 else:
     print("El archivo está vacío. Verifica la captura de datos.")
