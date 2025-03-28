@@ -79,6 +79,20 @@ luego se añaden dos funciones para aplicar filtros pasa altos y pasa bajos a la
 
 con esta parte del codigo, el código genera una gráfica comparativa de la señal EMG antes y después del filtrado en donde se representa la señal original en azul con transparencia y la señal filtrada en rojo para resaltar los efectos del procesamiento añadiendo las etiquetas en los ejes
 
+Ahora se realiza el aventanamiento de la señal,  en el que primero definimos el tamaño de la ventana y la superposicion entre cada una, de igual manera calculamos los pasos entre ventanas para el desplazamiento de la segmentación. Después creamos una lista vacía que almacena los segmentos de la señal después de aplciar una ventana de hamming, tambien una lista para almacenar espectros de cada ventana tras aplicar la transformada de Fourier. Se calcula la frecuencia de muestreo de la FFT y por última una lista vacía que almacena las frecuencias medias de cada ventana.
+
+![image](https://github.com/user-attachments/assets/695ebe81-0c79-45f9-af3a-35ff49423b75)
+
+
+Se crea una figura con ejes y titulos para mostrar la nueva señal. Incluimos un for que itera a través de la señal filtrada con un desplazamiento de 250 muestras por cada iteración, se extrae una porción de 500 muestras de la señal filtrada y se multiplica por una ventana de Hamming para reducir efectos de discontinuidad en la transformada de fourier y por último guarda la ventana para después graficar cada ventana superpuesta en el dominio del tiempo.
+
+![image](https://github.com/user-attachments/assets/5af9f890-b955-410b-b4b6-07d8836af7e3)
+
+
+Como resultado obtenemos la señal dividida en ventanas de tiempo lista para obtener el especto de frecuencias en intervalos específicos de la señal EMG
+
+
+
 4. Resultados 
 
 ![image](https://github.com/user-attachments/assets/3f806e75-32ec-449e-842a-3386ecf0734e)
@@ -90,6 +104,8 @@ dando como resultado la gráfica que muestra la señal EMG original en función 
 
 para luego comparar la señal EMG antes y después del filtrado la cual contiene lo que es la señal original (azul) que muestra alta variabilidad y ruido, mientras que la señal filtrada (roja) resalta mejor la actividad muscular eliminando frecuencias no deseadas permitiendo asi un mejor analisis de la señal generada por la actividad de contraccion y relajacion del musculo 
 
+
+![image](https://github.com/user-attachments/assets/1e0436ff-df1a-4887-818d-fb28bc8fdcd0)
 
 
    
