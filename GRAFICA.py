@@ -89,6 +89,23 @@ for i in range(0, len(filtered_signal) - tamaño_ventana, pasos):
 
 plt.show()
 
+# Análisis espectral de cada ventana
+plt.figure(figsize=(12, 6))
+plt.title("Espectrograma de la Señal EMG")
+plt.xlabel("Ventanas de Tiempo")
+plt.ylabel("Frecuencia (Hz)")
+
+espectrograma = []
+for ventana in ventanas_procesadas:
+    espectro = np.abs(fft(ventana)[:len(frecuencias)])
+    espectrograma.append(espectro)
+
+espectrograma = np.array(espectrograma).T  # Transponer para visualizar correctamente
+plt.imshow(espectrograma, aspect='auto', cmap='jet', origin='lower',
+           extent=[0, len(ventanas_procesadas), frecuencias[0], frecuencias[-1]])
+plt.colorbar(label="Amplitud del Espectro")
+plt.show()
+
 # Graficar evolución de la frecuencia mediana
 plt.figure(figsize=(10, 5))
 plt.plot(frecuencias_medias, marker='o', linestyle='-', color='red')
@@ -127,3 +144,5 @@ plt.ylabel("Densidad de Probabilidad")
 plt.legend()
 plt.grid()
 plt.show()
+
+
