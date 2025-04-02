@@ -91,6 +91,22 @@ Se crea una figura con ejes y titulos para mostrar la nueva señal. Incluimos un
 
 Como resultado obtenemos la señal dividida en ventanas de tiempo lista para obtener el especto de frecuencias en intervalos específicos de la señal EMG
 
+![image](https://github.com/user-attachments/assets/f7482b11-c967-4492-a8b1-eb2654370ae1)
+
+se realiza un análisis espectral de una señal de electromiografía (EMG) segmentada en ventanas de tiempo. Utiliza la Transformada Rápida de Fourier (FFT) para obtener la distribución de frecuencias en cada ventana y visualiza el resultado en forma de espectrograma lo que permite identificar la presencia de distintas frecuencias en la señal EMG a lo largo del tiempo
+
+![image](https://github.com/user-attachments/assets/ad94018f-f446-4456-84c6-ae5371adb040)
+
+
+se mustra la gráfica de la evolución de la frecuencia mediana donde se representa la evolución de la frecuencia mediana a lo largo del tiempo mediante un gráfico, ademas se realiza la Prueba de hipótesis que se divide la serie de frecuencias en dos grupos: 
+grupo1: Primera mitad de las frecuencias medianas
+grupo2: Segunda mitad de las frecuencias medianas.
+Luego se aplica una prueba t de muestras independientes para evaluar si existe una diferencia significativa entre ambos grupos con lo que se concluye que hay un cambio significativo en la frecuencia mediana, lo que podría indicar fatiga muscular.
+En caso contrario, no hay suficiente evidencia estadística para afirmar un cambio significativo.
+
+
+
+
 
 
 4. Resultados 
